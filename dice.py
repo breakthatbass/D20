@@ -15,14 +15,12 @@ def main():
         modifier = sys.argv[3]
     
     def roll_dice(die, rolls, modifier):
-        # var to deal with the modifier complexity
-        if modifier == '':
-            modifier = int(0)
+        
         print('----------------')
         for i in range(rolls):
             cast = randint(1, die)
             
-            if modifier != 0:
+            if modifier != 0 and cast > 1 and cast < 20:
                 print(f'base cast is {cast}')
                 print(colored(f"modifier is {modifier}", 'blue'))
             
