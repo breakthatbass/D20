@@ -2,18 +2,28 @@
 
 D20 is a program that rolls dice for dungeons and dragons
 
+### Installation
+```
+$ git clone https://github.com/breakthatbass/D20.git
+```
+then
+```
+cd D20 or cd path/to/D20
+```
+
 ### Usage:
 
-The program takes at least two or three arguments, the first is the type of die to roll (e.g. 20 for a D20) and the second is how many rolls.
-The third is the modifier which would look something like '+2' or '-2'. 
+The program takes one mandatory argument and two more optional arguments.
 
-If there's no modifier the third argument can be left out.
+
+The first argument is the type of die to roll (e.g. d20) which by default it rolls once.
+The second argument is a number which tells the program the amount of rolls to do if there are more than one roll wanted.
+The third is a modifier which is a number with a '+' or '-' in front of it.
 
 ```
-$ python dice.py dice rolls modifier
+$ python dice.py die
 ```
 It might look something like this:
-
 ```
 $ python dice.py d20 3 +3
 ```

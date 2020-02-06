@@ -1,4 +1,5 @@
 import sys
+from random import randint
 from termcolor import colored
 
 def check_die(die):
@@ -25,3 +26,30 @@ def check_die(die):
         for el in dice:
             print(el)
         sys.exit(1)
+
+def roll_dice(die, rolls, modifier):
+        
+    print('----------------')
+    for i in range(rolls):
+        cast = randint(1, die)
+            
+        # print info about rolls is there is a modifier
+        if modifier != 0:
+            print(f'base cast is {cast}')
+            print(f"modifier is {modifier}")
+    
+        # account for crit hits and crits misses while rolling a d20
+        if cast == 20:
+            print(colored(f"Roll {i + 1} is 20! Critical Hit!", 'green'))
+        elif cast == 1 and die == 20:
+            print(colored(f"Roll {i + 1} is 1. Critical miss! Dangit!", 'red'))
+
+        # if the modifer makes the roll go below 1, print 1
+        elif cast + (int(modifier)) < 1:
+            print(colored(f"Roll {i + 1} is 1", 'magenta'))
+        # otherwise just do the math and print the value
+        elif modifier != 0:
+            print(colored(f"Roll {i + 1} is {cast + (int(modifier))}", 'magenta'))
+        else:
+            print(colored(f"Roll {i + 1} is {cast}", 'magenta'))
+        print('----------------')
