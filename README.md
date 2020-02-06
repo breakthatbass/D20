@@ -15,7 +15,7 @@ $ python dice.py dice rolls modifier
 It might look something like this:
 
 ```
-$ python dice.py 20 3 +3
+$ python dice.py d20 3 +3
 ```
 which might return something like:
 
