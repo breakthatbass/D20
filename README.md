@@ -10,9 +10,14 @@ The third is the modifier which would look something like '+2' or '-2'.
 If there's no modifier the third argument can be left out.
 
 ```
+$ python dice.py dice rolls modifier
+```
+It might look something like this:
+
+```
 $ python dice.py 20 3 +3
 ```
-would return something like:
+which might return something like:
 
 ```
 -----------
