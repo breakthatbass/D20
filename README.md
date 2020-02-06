@@ -26,7 +26,7 @@ The third argument is a modifier which is a number with '+' or '-' in front of i
 ```
 $ python dice.py die
 ```
-It might look something like this:
+#### Example (with all three arguments):
 ```
 $ python dice.py d20 3 +3
 ```
