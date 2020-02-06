@@ -17,8 +17,11 @@ The program takes one mandatory argument and two more optional arguments.
 
 
 The first argument is the type of die to roll (e.g. d20) which by default it rolls once.
+
 The second argument is a number which tells the program the amount of rolls to do if there are more than one roll wanted.
-The third is a modifier which is a number with a '+' or '-' in front of it.
+
+
+The third argument is a modifier which is a number with '+' or '-' in front of it.
 
 ```
 $ python dice.py die
