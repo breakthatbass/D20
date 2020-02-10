@@ -39,9 +39,9 @@ def roll_dice(die, rolls, modifier):
     
         # account for crit hits and crits misses while rolling a d20
         if cast == 20:
-            print(colored(f"Roll {i + 1} is 20! Critical Hit!", 'green'))
+            print(colored(f"Roll {i + 1} is 20! Critical Hit!", 'green', attrs=['bold']))
         elif cast == 1 and die == 20:
-            print(colored(f"Roll {i + 1} is 1. Critical miss! Dangit!", 'red'))
+            print(colored(f"Roll {i + 1} is 1. Critical miss! Dangit!", 'red', attrs=['bold']))
 
         # if the modifer makes the roll go below 1, print 1
         elif cast + (int(modifier)) < 1:
