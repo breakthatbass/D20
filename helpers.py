@@ -33,7 +33,7 @@ def roll_dice(die, rolls, modifier):
         cast = randint(1, die)
             
         # print info about rolls is there is a modifier
-        if modifier != 0:
+        if modifier != 0 and cast != 20 and cast != 1:
             print(f'base cast is {cast}')
             print(f"modifier is {modifier}")
     
