@@ -31,9 +31,18 @@ def roll_dice(die, rolls, modifier):
     print('----------------')
     for i in range(rolls):
         cast = randint(1, die)
-            
+        
+        # Kepp track of crit to use to not show base and modifier if they are implemented    
+        crit = False 
+    
+        if cast == 20: # crit hit true
+            crit = True
+
+        if cast == 1 and die == 20: # crit miss true
+            crit = True
+
         # print info about rolls is there is a modifier
-        if modifier != 0 and cast != 20 and cast != 1:
+        if modifier != 0 and crit == False:
             print(f'base cast is {cast}')
             print(f"modifier is {modifier}")
     
@@ -51,4 +60,6 @@ def roll_dice(die, rolls, modifier):
             print(colored(f"Roll {i + 1} is {cast + (int(modifier))}", 'magenta'))
         else:
             print(colored(f"Roll {i + 1} is {cast}", 'magenta'))
+    
         print('----------------')
+        
