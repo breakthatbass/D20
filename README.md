@@ -45,7 +45,7 @@ which might return something like:
 -----------
 Base roll is 7
 Modifier is +3
-Roll 1 is 9.
+Roll 1 is 10.
 -----------
 Roll 2 is 20. Critical hit!
 -----------
