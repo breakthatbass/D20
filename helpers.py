@@ -54,12 +54,12 @@ def roll_dice(die, rolls, modifier):
 
         # if the modifer makes the roll go below 1, print 1
         elif cast + (int(modifier)) < 1:
-            print(colored(f"Roll {i + 1} is 1", 'magenta'))
+            print(colored(f"Roll {i + 1} is 1", 'cyan'))
         # otherwise just do the math and print the value
         elif modifier != 0:
-            print(colored(f"Roll {i + 1} is {cast + (int(modifier))}", 'magenta'))
+            print(colored(f"Roll {i + 1} is {cast + (int(modifier))}", 'cyan'))
         else:
-            print(colored(f"Roll {i + 1} is {cast}", 'magenta'))
+            print(colored(f"Roll {i + 1} is {cast}", 'cyan'))
     
         print('----------------')
         
