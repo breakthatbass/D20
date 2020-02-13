@@ -54,3 +54,11 @@ Modifier is +3
 Roll 3 is 16
 -----------
 ```
+If you would like to use the command ```roll``` in place of ```python dice.py```, add this function to your ```.bash_profile```:
+
+``` bash
+function roll 
+{ 
+  python ~/path/to/d20/dice.py $1 $2 $3 
+}
+```
