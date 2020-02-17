@@ -2,6 +2,8 @@
 
 D20 is a program that rolls dice for dungeons and dragons
 
+I also wrote equivalent versions in [C](https://github.com/breakthatbass/C20) and [Rust](https://github.com/breakthatbass/rusty-dice).
+
 ### Installation
 ```
 $ git clone https://github.com/breakthatbass/D20.git
