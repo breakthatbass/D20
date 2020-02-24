@@ -6,11 +6,7 @@ I also wrote equivalent versions in [C](https://github.com/breakthatbass/C20) an
 
 ### Installation
 ```
-$ git clone https://github.com/breakthatbass/D20.git
-```
-then
-```
-cd D20 or cd path/to/D20
+$ pip install d20
 ```
 
 ### Usage:
@@ -30,16 +26,16 @@ The third argument is a modifier which is a number with '+' or '-' in front of i
 run with one of 6 dice: d4, d6, d8, d10, d12, d20
 
 ```
-$ python dice.py die
+$ dice die
 ```
 or with additional arguments
 ```
-$ python dice.py die rolls modifier
+$ dice die rolls modifier
 ```
 
 #### Example (with all three arguments):
 ```
-$ python dice.py d20 3 +3
+$ dice d20 3 +3
 ```
 which might return something like:
 
@@ -55,12 +51,4 @@ Base roll is 13
 Modifier is +3
 Roll 3 is 16
 -----------
-```
-If you would like to use the command ```roll``` in place of ```python dice.py```, add this function to your ```.bash_profile```:
-
-``` bash
-function roll 
-{ 
-  python ~/path/to/d20/dice.py $1 $2 $3 
-}
 ```

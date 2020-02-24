@@ -25,6 +25,7 @@ def check_die(die):
         for el in dice:
             print(el)
         sys.exit(1)
+        
 
 def roll_dice(die, rolls, modifier):
         
