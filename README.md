@@ -6,7 +6,7 @@ I also wrote equivalent versions in [C](https://github.com/breakthatbass/C20) an
 
 ### Installation
 ```
-$ pip install d20
+$ git clone https://github.com/breakthatbass/D20.git
 ```
 
 ### Usage:
@@ -26,16 +26,16 @@ The third argument is a modifier which is a number with '+' or '-' in front of i
 run with one of 6 dice: d4, d6, d8, d10, d12, d20
 
 ```
-$ dice die
+$ python dice.py die
 ```
 or with additional arguments
 ```
-$ dice die rolls modifier
+$ python dice.py rolls modifier
 ```
 
 #### Example (with all three arguments):
 ```
-$ dice d20 3 +3
+$ python dice.py d20 3 +3
 ```
 which might return something like:
 
