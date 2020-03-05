@@ -3,6 +3,8 @@ from random import randint
 from termcolor import colored
 
 def check_die(die):
+    ''' take the die string and return it's value as int '''
+
     # dict to compare input to
     dice = {
         'd4': 4,
@@ -24,11 +26,13 @@ def check_die(die):
         print(colored('Valid Dice:', 'green'))
         for el in dice:
             print(el)
-        sys.exit(1)
-        
+        raise SystemExit(1)
+
 
 def roll_dice(die, rolls, modifier):
-        
+    '''
+     take die int, call randint() rolls amount, add the modifier to each roll
+    '''
     print('----------------')
     for i in range(rolls):
         cast = randint(1, die)
@@ -63,4 +67,3 @@ def roll_dice(die, rolls, modifier):
             print(colored(f"Roll {i + 1} is {cast}", 'cyan'))
     
         print('----------------')
-        
