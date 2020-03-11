@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='dice',
-    packages=['module'],
+    packages=['modules'],
     entry_points={
         'console_scripts' : [
             'roll = modules.dice:main',
@@ -10,7 +10,6 @@ setup(
     },
     install_requires=[
         'termcolor',
-        'sys',
         'random2',
     ]
 )
