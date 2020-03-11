@@ -1,5 +1,5 @@
 import sys
-from random import randint
+from random2 import randint
 from termcolor import colored
 
 def check_die(die):
